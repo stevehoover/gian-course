@@ -13,7 +13,7 @@ This repository contains materials for the course: "Next-Generation Semiconducto
    - [Calculator](https://makerchip.com/sandbox?code_url=https:%2F%2Fraw.githubusercontent.com%2Fstevehoover%2Fgian-course%2Fmain%2Ftt_um_calc_shell.tlv)
    - [Calculator in Module 4](https://makerchip.com/sandbox?code_url=https:%2F%2Fraw.githubusercontent.com%2Fstevehoover%2Fgian-course%2Fmain%2Ftt_um_calc_module4.tlv)
    - [CPU](https://makerchip.com/sandbox?code_url=https:%2F%2Fraw.githubusercontent.com%2Fstevehoover%2Fgian-course%2Fmain%2Ftt_um_riscv_shell.tlv)
-   - [Empty Template for Final Projects](https://makerchip.com/sandbox?code_url=https:%2F%2Fraw.githubusercontent.com%2Fstevehoover%2Fgian-course%2Fmain%2Ftt_um_empty_template.tlv)
+   - [Empty Template for Final Projects](https://makerchip.com/sandbox?code_url=https:%2F%2Fraw.githubusercontent.com%2Fstevehoover%2Ftt10-makerchip-template%2Fsrc%2Fproject.tlv)
    - [Reference designs, other starter templates, and past projects](./reference_designs/README.md)
  - [Reference solutions](https://makerchip.com/sandbox?code_url=https:%2F%2Fraw.githubusercontent.com%2Fstevehoover%2Fgian-course%2Fmain%2Freference_solutions.tlv) (Ctrl-Click for new tab)
  - Handouts
