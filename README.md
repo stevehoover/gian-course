@@ -4,8 +4,7 @@ This repository contains materials for the course: "Next-Generation Semiconducto
 
 ## Course Materials
 
- - Slides
-   - [Module 1: Digital Logic and CPUs]
+ - [Slides](https://docs.google.com/presentation/d/1unt9E73wd47VRWBN9G3i5raTyQk_lPVCQLc10xhI1dg/edit?usp=sharing)
  - [Nandgame](https://nandgame.com)
  - [Wokwi Starting Template for Tiny Tapeout](https://wokwi.com/projects/354858054593504257)
  - [Matt Venn's "Microchip Manufacturing - How computer chips get made!" Video](https://www.youtube.com/watch?v=aBDJQ9NYTEU)
