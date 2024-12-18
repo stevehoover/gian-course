@@ -131,6 +131,9 @@ module m5_user_module_name (
 );
    wire reset = ! rst_n;
 
+   // List all potentially-unused inputs to prevent warnings
+   wire _unused = &{ena, clk, rst_n, 1'b0};
+
 \TLV
    /* verilator lint_off UNOPTFLAT */
    m5_if(m5_in_fpga, ['m5+tt_lab()'], ['m5+my_design()'])
