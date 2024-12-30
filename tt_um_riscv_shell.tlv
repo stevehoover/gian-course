@@ -36,7 +36,9 @@
    // If debouncing, a user's module is within a wrapper, so it has a different name.
    var(user_module_name, m5_if(m5_debounce_inputs, my_design, m5_my_design))
    var(debounce_cnt, m5_if_defined_as(MAKERCHIP, 1, 8'h03, 8'hff))
-   
+   // No TT lab outside of Makerchip.
+   if_defined_as(MAKERCHIP, 1, [''], ['m5_set(in_fpga, 0)'])
+
    
    // ==================
    // Sum 1 to 9 Program
@@ -135,7 +137,7 @@ module top(input logic clk, input logic reset, input logic [31:0] cyc_cnt, outpu
    logic rst_n = ! reset;
    
    // Instantiate the Tiny Tapeout module.
-   m5_user_module_name tt(.*);
+   m5_my_design tt(.*);
    
    // Passed/failed to control Makerchip simulation, passed from Tiny Tapeout module's uo_out pins.
    assign passed = uo_out[0];

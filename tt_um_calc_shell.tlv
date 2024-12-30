@@ -34,7 +34,8 @@
    // If debouncing, a user's module is within a wrapper, so it has a different name.
    var(user_module_name, m5_if(m5_debounce_inputs, my_design, m5_my_design))
    var(debounce_cnt, m5_if_defined_as(MAKERCHIP, 1, 8'h03, 8'hff))
-
+   // No TT lab outside of Makerchip.
+   if_defined_as(MAKERCHIP, 1, [''], ['m5_set(in_fpga, 0)'])
 \SV
    // Include Tiny Tapeout Lab.
    m4_include_lib(https:/['']/raw.githubusercontent.com/os-fpga/Virtual-FPGA-Lab/35e36bd144fddd75495d4cbc01c4fc50ac5bde6f/tlv_lib/tiny_tapeout_lib.tlv)
@@ -80,7 +81,7 @@ module top(input logic clk, input logic reset, input logic [31:0] cyc_cnt, outpu
    logic rst_n = ! reset;
    
    // Instantiate the Tiny Tapeout module.
-   m5_user_module_name tt(.*);
+   m5_my_design tt(.*);
    
    assign passed = top.cyc_cnt > 80;
    assign failed = 1'b0;
